@@ -1,0 +1,37 @@
+.icon{
+    display: flex;
+    font-size: 20px;
+    color: black;
+}
+
+.icon::before{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: cover;
+    content: ' ';
+}
+
+.icon.man::before{
+    background-image: url(../img/icon/man_FILL0_wght400_GRAD0_opsz48.png);
+}
+
+.icon.woman::before{
+    background-image: url(../img/icon/woman_FILL0_wght400_GRAD0_opsz48.png);
+}
+
+.icon.verySmile::before{
+    background-image: url(../img/icon/sentiment_very_satisfied_FILL0_wght400_GRAD0_opsz48.png);
+}
+
+.icon.smile::before{
+    background-image: url(../img/icon/sentiment_satisfied_FILL0_wght400_GRAD0_opsz48.png);
+}
+
+.icon.bad::before{
+    background-image: url(../img/icon/sentiment_neutral_FILL0_wght400_GRAD0_opsz48.png);
+}
+
+.icon.veryBad::before{
+    background-image: url(../img/icon/mood_bad_FILL0_wght400_GRAD0_opsz48.png);
+}

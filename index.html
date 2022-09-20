@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kotovich</title>
+    <link rel="stylesheet" href="media/css/icons.css">
+    <link rel="stylesheet" href="media/css/style.css"/>
+    <script src="media/JS/jquery-3.6.0.min.js"></script>
+    <script src="media/JS/index.js"></script>  
+</head>
+<body>
+    <div class="header">
+        <div class="header-names" id="pizza">
+            <div class="header-name1">Pizza</div>
+            <div class="header-name2">Restaurant</div>
+        </div>
+		<div class="header-empty">Добро пожаловать!</div>
+        <div class="header-links">
+            <a href="#home" class="links" data-color="green" data-title="Домашняя страница" data-content="На этой странице вы можете ознакомиться с нашим рестораном">Home</a>
+            <a href="#menu" class="links" data-color="yellow" data-title="Меню ресторана" data-content="На этой странице вы можете ознакомиться с меню нашего ресторана рестораном">
+                 Menu 
+            </a>
+            <a href="#cervices" class="links" data-color="red" data-title="Услуги" data-content="На этой странице вы можете ознакомиться с нашими услугами рестораном">
+                Services 
+            </a>
+            <a href="#contact" class="links" data-color="blue" data-title="Контакты ресторана" data-content="Телефон....">
+                 Contact 
+            </a>
+        </div>
+    </div>
+    <div class="questionnaire">
+        <div class="bg-transparenter">
+            <div class="transparenter">
+                <div class="part" id="age">
+                    <div class="part-name-first">
+                        <p>АНКЕТА</p>
+                        Нам важно ваше мнение! Пройдите пожалуйста наш опрос.
+                    </div>
+                </div>
+                <div class="part">
+                    <div class="part-name-error">
+                        <div class="part-name">
+                            1. Ваше имя: 
+                        </div> 
+                        <div class="part-name">
+                            *Обязательно заполните поле
+                        </div>
+                    </div> 
+                    <label>
+                        <input type="text" placeholder="имя">
+                    </label class="error">
+                </div>
+                <div class="part">
+                    <label>
+                    <div class="part-name">
+                        1. Ваше имя:
+                    </div> 
+                        <input type="text" placeholder="имя">
+                    </label>
+                </div>
+                <div class="part">
+                    <label>
+                    <div class="part-name">
+                        2. Ваш возраст:
+                    </div> 
+                        <input type="number"  placeholder="1-100" min="1" max="100">
+                    </label>
+                </div>
+                <div class="part">
+                    <div class="part-name">
+                        3. Ваш пол:
+                    </div>
+                    <div>
+                    <label class="lables">
+                        <input type="radio" name="gender" id="genderMan" value="man">
+                        <label for="genderMan"></label>
+                        <div class="icon man">
+                        </div>
+                    </label>
+                    <label class="lables">
+                        <input type="radio" name="gender" id="genderWoman" value="woman">
+                        <label for="genderWoman"></label>
+                        <div class="icon woman">
+                        </div>
+                    </label>
+                    </div>
+                </div>
+                <div class="part">
+                    <div class="part-name">
+                        4. Где вы живете:
+                    </div>
+                    <select name="country">
+                        <option>Минск</option>
+                        <option>Могилев</option>
+                        <option>Гомель</option>
+                        <option>Гродно</option>
+                        <option>другой город</option>
+                    </select>
+                </div>
+                <div class="part">
+                    <div class="part-name">
+                        5. Какими сервисами ресторана вы пользуетесь:
+                    </div>
+                    <label>
+                        <input type="checkbox" name="services">доставка
+                    </label>    
+                    <label>
+                        <input type="checkbox" name="services">еда навынос
+                    </label>    
+                    <label>
+                        <input type="checkbox" name="services">посещаю ресторан
+                    </label>    
+                </div>
+                <div class="part">
+                    <div class="part-name">
+                        6. Оцените обслуживание в ресторане PizzaRestaurant:
+                    </div>
+                    <label class="lables">
+                        <input type="radio" name="pleased" id="pleasedVerySmile" value="verySmile">
+                        <label for="pleasedVerySmile"></label>
+                        <div class="icon verySmile">
+                            (отлично)
+                        </div>
+                    </label>    
+                    <label class="lables">
+                        <input type="radio" name="pleased" id="pleasedSmile" value="smile">
+                        <label for="pleasedSmile"></label>
+                        <div class="icon smile">
+                            (нормально)
+                        </div>
+                    </label>
+                    <label class="lables">
+                        <input type="radio" name="pleased" id="pleasedBad" value="bad">
+                        <label for="pleasedBad"></label>
+                        <div class="icon bad">
+                            (плохо)
+                        </div>
+                    </label>    
+                    <label class="lables">
+                        <input type="radio" name="pleased" id="pleasedVeryBad" value="veryBad">
+                        <label for="pleasedVeryBad"></label>
+                        <div class="icon veryBad">
+                            (очень плохо)
+                        </div>
+                    </label>    
+                </div>
+                <div class="part">
+                    <div class="part-name">
+                        6. Оцените обслуживание в ресторане:
+                    </div>
+                    <div class="part-six">
+                        <div class="part-six-name"></div>
+                        <div class="part-six-input">
+                            <label class="lables-six">
+                                <div class="icon verySmile"></div>
+                                <div class="icon smile"></div>
+                                <div class="icon bad"></div>
+                                <div class="icon veryBad"></div>
+                            </label>     
+                        </div>
+                    </div>
+                    <div class="part-six">
+                        <div class="part-six-name">Вкусная еда</div>
+                        <div class="part-six-input">
+                            <label class="lables-six">
+                                <input type="radio" name="serviceEat">
+                                <input type="radio" name="serviceEat">
+                                <input type="radio" name="serviceEat">
+                                <input type="radio" name="serviceEat">
+                            </label>     
+                        </div>
+                    </div>
+                    <div class="part-six">
+                        <div class="part-six-name">Вежливый персонал</div>
+                        <div class="part-six-input">
+                            <label class="lables-six">
+                                <input type="radio" name="serviceStaff">
+                                <input type="radio" name="serviceStaff">
+                                <input type="radio" name="serviceStaff">
+                                <input type="radio" name="serviceStaff">
+                            </label>     
+                        </div>
+                    </div>
+                    <div class="part-six">
+                        <div class="part-six-name">Быстрая доставка</div>
+                        <div class="part-six-input">
+                            <label class="lables-six">
+                                <input type="radio" name="serviceDelivery">
+                                <input type="radio" name="serviceDelivery">
+                                <input type="radio" name="serviceDelivery">
+                                <input type="radio" name="serviceDelivery">
+                            </label>     
+                        </div>
+                    </div>                  
+                </div> 
+                <div class="input-questionnaire">
+                    <button class="custom-btn btn-2">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-name">
+            Проектирование динамиских страниц
+        </div>
+        <div class="footer-name">
+            лектор: Михалькевич А.В.
+        </div>
+        <div class="footer-name">
+            слушатель: Котович А.В.
+        </div>
+        <div class="footer-name">
+            © IIT 10423, сентябрь 2022
+        </div>
+    </div>  
+</body>
+</html>
