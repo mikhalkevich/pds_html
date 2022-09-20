@@ -1,8 +1,8 @@
-##Pizza Restaurant
+## Pizza Restaurant
 Сайт ресторана-пиццерии
-##Используемые технологии:
--HTML
--CSS
--JS
--JQuery
+## Используемые технологии:
+- HTML
+- CSS
+- JS
+- JQuery
 
